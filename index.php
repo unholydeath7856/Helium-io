@@ -13,7 +13,7 @@
       <img src="Assets/Images/MenuBar.png" alt="NavBtn" />
     </div>
     <div class="navbar-pop">
-      <div class="navbar-container">
+      <div id="target-nav" class="navbar-container">
         <h2>Helium.io</h2>
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-item-link" href="#top">Top</a></li>
@@ -50,7 +50,7 @@
     <footer id="bot" class="footer">
 
     </footer>
-    <script src="Assets/Scripts/JS/functions.js"></script>
     <script src="Assets/Scripts/JS/jquery.js"></script>
+    <script src="Assets/Scripts/JS/functions.js"></script>
   </body>
 </html>
