@@ -1,0 +1,40 @@
+.navbar-pop {
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  background-color:rgba(0, 0, 0, 0.66);
+  .navbar-container {
+    height: 100%;
+    font-family: sans-serif;
+    width:200px;
+    z-index: 5;
+    background-color:$dark-background;
+
+    .nav-button {
+      display:block;
+    }
+
+    .nav-list {
+      list-style: none;
+      padding:0;
+
+      .nav-item {
+        padding:20px;
+        border-bottom: 1px $light-text solid;
+        text-align: center;
+        .nav-item-link {
+          color: $light-text;
+          text-decoration: none;
+        }
+        &:hover {
+          transition: background-color 0.5s;
+          background-color: $light-text;
+          .nav-item-link {
+            transition: color 0.5s;
+            color: $dark-background;
+          }
+        }
+      }
+    }
+  }
+}
