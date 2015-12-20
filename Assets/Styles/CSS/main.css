@@ -3,7 +3,24 @@ html, body {
   padding: 0;
   z-index: 1; }
 
+.nav-button {
+  background: white;
+  margin: 5px;
+  position: fixed;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px black solid;
+  display: block; }
+  .nav-button img {
+    width: 40px;
+    height: 40px; }
+  .nav-button:hover {
+    background-color: black;
+    cursor: pointer; }
+
 .navbar-pop {
+  display: none;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -14,8 +31,10 @@ html, body {
     width: 200px;
     z-index: 5;
     background-color: #0f0718; }
-    .navbar-pop .navbar-container .nav-button {
-      display: block; }
+    .navbar-pop .navbar-container h2 {
+      color: #e0dace;
+      text-align: center;
+      padding-top: 20px; }
     .navbar-pop .navbar-container .nav-list {
       list-style: none;
       padding: 0; }
