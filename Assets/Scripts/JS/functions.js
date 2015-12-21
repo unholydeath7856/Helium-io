@@ -12,4 +12,9 @@ $(".navbar-pop").click(function (e) {
       $(".nav-button").slideDown(300);
     });
   }
-})
+});
+
+$(".nav-item").click(function() {
+  $(this).siblings('li').removeClass('active');
+  $(this).addClass('active');
+});

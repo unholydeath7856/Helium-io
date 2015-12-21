@@ -40,6 +40,9 @@ html, body {
     .navbar-pop .navbar-container .nav-list {
       list-style: none;
       padding: 0; }
+      .navbar-pop .navbar-container .nav-list .active {
+        background-color: #e0dace;
+        color: #0f0718; }
       .navbar-pop .navbar-container .nav-list .nav-item {
         border-bottom: 1px #e0dace solid; }
         .navbar-pop .navbar-container .nav-list .nav-item .nav-item-link {

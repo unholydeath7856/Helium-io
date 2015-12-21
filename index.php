@@ -16,7 +16,7 @@
       <div id="target-nav" class="navbar-container">
         <h2>Helium.io</h2>
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-item-link" href="#top">Top</a></li>
+          <li class="nav-item active"><a class="nav-item-link" href="#top">Top</a></li>
           <li class="nav-item"><a class="nav-item-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-item-link" href="#submit">Submit</a></li>
           <li class="nav-item"><a class="nav-item-link" href="#map">Map</a></li>

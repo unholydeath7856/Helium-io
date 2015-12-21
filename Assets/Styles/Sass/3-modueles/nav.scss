@@ -42,6 +42,11 @@
       list-style: none;
       padding:0;
 
+      .active {
+        background-color:$light-text;
+        color:$dark-background;
+      }
+
       .nav-item {
         border-bottom: 1px $light-text solid;
         .nav-item-link {
