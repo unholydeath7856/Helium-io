@@ -1,10 +1,35 @@
 html, body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   z-index: 1; }
 
+header {
+  font-family: "Josefin Sans";
+  background-image: url("../../../Assets/Images/HeroBG.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  header .hero-title {
+    font-size: 72px;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 700;
+    font-family: inherit;
+    color: #e0dace; }
+  header .hero-kicker {
+    font-size: 36px;
+    color: #e0dace;
+    font-family: inherit;
+    font-weight: 100; }
+
 .nav-button {
-  margin: 5px;
+  margin: 10px;
+  background-color: white;
   position: fixed;
   padding: 5px;
   width: 40px;
@@ -19,6 +44,7 @@ html, body {
     cursor: pointer; }
 
 .navbar-pop {
+  z-index: 5;
   display: block;
   display: none;
   height: 100%;
@@ -26,12 +52,12 @@ html, body {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.66); }
   .navbar-pop .navbar-container {
+    font-family: "Josefin Sans";
     position: fixed;
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: sans-serif;
-    width: 200px;
+    width: 250px;
     background-color: #0f0718; }
     .navbar-pop .navbar-container h2 {
       color: #e0dace;
@@ -40,16 +66,14 @@ html, body {
     .navbar-pop .navbar-container .nav-list {
       list-style: none;
       padding: 0; }
-      .navbar-pop .navbar-container .nav-list .active {
-        background-color: #e0dace;
-        color: #0f0718; }
       .navbar-pop .navbar-container .nav-list .nav-item {
-        border-bottom: 1px #e0dace solid; }
+        border-bottom: 1px #e0dace solid;
+        color: #e0dace; }
         .navbar-pop .navbar-container .nav-list .nav-item .nav-item-link {
-          display: block;
           color: #e0dace;
+          display: block;
           text-decoration: none;
-          width: 100%;
+          width: 80%;
           height: 100%;
           padding: 20px; }
         .navbar-pop .navbar-container .nav-list .nav-item:hover {
@@ -58,5 +82,10 @@ html, body {
           .navbar-pop .navbar-container .nav-list .nav-item:hover .nav-item-link {
             transition: color 0.5s;
             color: #0f0718; }
+      .navbar-pop .navbar-container .nav-list .active {
+        background-color: #e0dace;
+        color: #0f0718; }
+        .navbar-pop .navbar-container .nav-list .active .nav-item-link {
+          color: inherit; }
 
 /*# sourceMappingURL=main.css.map */

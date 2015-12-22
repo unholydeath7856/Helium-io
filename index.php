@@ -6,6 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>Helium.io</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="Assets/Styles/CSS/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
@@ -26,7 +27,8 @@
     </div>
 
     <header id="top" class="header">
-
+      <h2 class="hero-title">Helium.io</h2>
+      <h4 class="hero-kicker">A simple US State Map Application</h4>
     </header>
 
     <section id="about" class="about">

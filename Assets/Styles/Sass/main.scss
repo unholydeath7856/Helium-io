@@ -1,12 +1,15 @@
 //naturalize body
 html,body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   z-index: 1;
 }
 
 //tools import
 @import "1-tools/variables.scss";
+
+//section import
+@import "2-sections/header.scss";
 
 //modueles import
 @import "3-modueles/nav";
