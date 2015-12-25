@@ -54,9 +54,33 @@ Etiam interdum metus iaculis eros ornare, eget efficitur metus fringilla. Morbi 
       <div class="container">
         <h3 class="section-header">Submit</h3>
           <form class="map-submit" action="index.php" method="post">
-            <select class="state" name="state">
+            <div class="select-container"></div>
+            <select id="select" class="state js-select-skin" name="state">
               <option value="Al">Alabama</option>
               <option value="Ak">Alaska</option>
+              <option value="Az">Arizona</option>
+              <option value="Ar">Arkansas</option>
+              <option value="Ca">California</option>
+              <option value="Co">Colorado</option>
+              <option value="Ct">Connecticut</option>
+              <option value="De">Deleware</option>
+              <option value="Fl">Florida</option>
+              <option value="Ga">Georgia</option>
+              <option value="Hi">Hawaii</option>
+              <option value="Id">Idaho</option>
+              <option value="Il">Illinois</option>
+              <option value="In">Indiana</option>
+              <option value="Ia">Iowa</option>
+              <option value="Ks">Kansas</option>
+              <option value="Ky">Kentucky</option>
+              <option value="La">Louisiana</option>
+              <option value="Me">Maine</option>
+              <option value="Md">Maryland</option>
+              <option value="Ma">Massachusetts</option>
+              <option value="Mi">Michigan</option>
+              <option value="Mn">Minnesota</option>
+              <option value="Ms">Mississippi</option>
+              <option value="Mo">Missouri</option>
             </select><br>
             <label for="map-style">Road</label><input class="map-style" type="radio" name="name">
           </form>
@@ -73,6 +97,7 @@ Etiam interdum metus iaculis eros ornare, eget efficitur metus fringilla. Morbi 
 
     </footer>
     <script src="Assets/Scripts/JS/jquery.js"></script>
+    <script src="Assets/Scripts/JS/customize-input.js"></script>
     <script src="Assets/Scripts/JS/functions.js"></script>
   </body>
 </html>

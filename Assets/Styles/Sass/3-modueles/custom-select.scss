@@ -1,0 +1,35 @@
+.select-container {
+  height: 100px;
+  cursor: pointer;
+  .select-field {
+    font-weight: 700;
+    font-size:24px;
+    text-align: center;
+    .current {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      cursor: pointer;
+      padding:10px;
+      width:150px;
+      border: 3px solid $light-text;
+      background-color: white;
+    }
+    .custom-dropdown {
+      display: block;
+      width:175px;
+      padding: 0;
+      overflow-y: scroll;
+      height: 250px;
+      margin: 0 auto;
+      list-style: none;
+      display: none;
+      li {
+        font-weight: 400;
+        padding:10px;
+        background-color:white;
+        border: 3px solid $light-text;
+      }
+    }
+  }
+}
