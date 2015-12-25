@@ -24,12 +24,12 @@ $(".nav-item").click(function() {
 $(".select-container").click(function (event) {
   $(".custom-dropdown").slideToggle(200);
   var listItemClicked = event.target.id;
-  if (listItemClicked != "" || !(isNaN(listItemClicked)))
+  if (listItemClicked != "")
   {
     var itemValue = $('#'+listItemClicked).text();
     $('.state option').eq(listItemClicked).attr('selected',true);
     $('.state option').eq(prevSelect).attr('selected',false);
     prevSelect = listItemClicked;
-    
+    $(".current").text(itemValue);
   }
 });

@@ -81,6 +81,31 @@ Etiam interdum metus iaculis eros ornare, eget efficitur metus fringilla. Morbi 
               <option value="Mn">Minnesota</option>
               <option value="Ms">Mississippi</option>
               <option value="Mo">Missouri</option>
+              <option value="Mt">Montana</option>
+              <option value="Ne">Nebraska</option>
+              <option value="Nv">Nevada</option>
+              <option value="Nh">New Hampshire</option>
+              <option value="Nj">New Jersey</option>
+              <option value="Nm">New Mexico</option>
+              <option value="Ny">New York</option>
+              <option value="Nc">North Carolina</option>
+              <option value="Nd">North Dakota</option>
+              <option value="Oh">Ohio</option>
+              <option value="Ok">Oklahoma</option>
+              <option value="Or">Oregan</option>
+              <option value="Pa">Pennsylvania</option>
+              <option value="Ri">Rhode Island</option>
+              <option value="Sc">South Carolina</option>
+              <option value="Sd">South Dakota</option>
+              <option value="Tn">Tennessee</option>
+              <option value="Tx">Texas</option>
+              <option value="Ut">Utah</option>
+              <option value="Vt">Vermont</option>
+              <option value="Va">Virgina</option>
+              <option value="Wa">Washington</option>
+              <option value="Wv">West Virginia</option>
+              <option value="Wi">Wisconsin</option>
+              <option value="Wy">Wyoming</option>
             </select><br>
             <label for="map-style">Road</label><input class="map-style" type="radio" name="name">
           </form>
