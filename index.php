@@ -1,5 +1,13 @@
 <?php
-
+  $map = "";
+  include_once('Assets/Scripts/PHP/connect.php');
+  if(isset($_POST['state'])) {
+    $id = $_POST['state'];
+    $query = mysqli_query($conn,'SELECT map_html FROM maps WHERE id="'.$id.'"');
+    while ($row = mysqli_fetch_array($query)) {
+      $map = $row['map_html'];
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +23,9 @@
     </div>
     <div class="navbar-pop">
       <div id="target-nav" class="navbar-container">
+        <img class="logo" src="Assets/Images/Logo.png" alt="Logo" />
         <h2>Helium.io</h2>
+        <span class="close">X</span>
         <ul class="nav-list">
           <li class="nav-item active"><a class="nav-item-link" href="#top">Top</a></li>
           <li class="nav-item"><a class="nav-item-link" href="#about">About</a></li>
@@ -27,6 +37,7 @@
     </div>
 
     <header id="top" class="header">
+
       <h2 class="hero-title">Helium.io</h2>
       <h4 class="hero-kicker">A simple US State Map Application</h4>
     </header>
@@ -53,7 +64,7 @@ Etiam interdum metus iaculis eros ornare, eget efficitur metus fringilla. Morbi 
     <section id="submit" class="submit-section">
       <div class="container">
         <h3 class="section-header">Submit</h3>
-          <form class="map-submit" action="index.php" method="post">
+          <form class="map-submit" action="index.php#map" method="post">
             <div class="select-container"></div>
             <select id="select" class="state js-select-skin" name="state">
               <option value="Al">Alabama</option>
@@ -107,19 +118,31 @@ Etiam interdum metus iaculis eros ornare, eget efficitur metus fringilla. Morbi 
               <option value="Wi">Wisconsin</option>
               <option value="Wy">Wyoming</option>
             </select><br>
-            <label for="map-style">Road</label><input class="map-style" type="radio" name="name">
+            <input class="submit" type="submit" name="submit" value="Submit">
           </form>
       </div>
     </section>
 
     <section id="map" class="map">
-      <div id="" class="map">
-
+      <h3 class="section-header">Map</h3>
+      <div class="map-container">
+        <?php print($map); ?>
       </div>
     </section>
 
     <footer id="bot" class="footer">
-
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img src="Assets/Images/logo.png" alt="logo" />
+        </div>
+        <a class="navlink" href="#top">Top</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#submit">Submit</a>
+        <a class="navlink" href="#Map">Map</a>
+      </nav>
+      <div class="copy-right">
+        <p>Copyright © 2015</p>
+      </div>
     </footer>
     <script src="Assets/Scripts/JS/jquery.js"></script>
     <script src="Assets/Scripts/JS/customize-input.js"></script>

@@ -33,11 +33,21 @@
     height: 100%;
     width:250px;
     background-color:$dark-background;
+    .logo {
+      display: inline-block;
+      padding:10px;
+    }
 
     h2 {
+      margin-right:5px;
+      display: inline-block;
       color:$light-text;
       text-align: center;
       padding-top:20px;
+    }
+
+    .close {
+      display: none;
     }
 
     .nav-list {
@@ -69,6 +79,22 @@
         color:$dark-background;
         .nav-item-link {
           color:inherit;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:570px) {
+    .navbar-container {
+      width: 100%;
+      .close {
+        float:right;
+        color:$light-text;
+        display: inline-block;
+        padding:25px;
+        font-weight: 700;
+        font-size:28px;
+        &:hover {
+          cursor: pointer;
         }
       }
     }

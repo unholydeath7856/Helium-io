@@ -1,0 +1,19 @@
+.map {
+  width:100%;
+  padding-top:25px;
+  padding-bottom: 25px;
+  .section-header {
+    font-family: $font-family;
+    text-align: center;
+    color:$light-text;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .map-container {
+    display: block;
+    iframe {
+      display:block;
+      margin: 0 auto;
+    }
+  }
+}

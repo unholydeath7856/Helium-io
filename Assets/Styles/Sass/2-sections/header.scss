@@ -24,3 +24,10 @@ header {
     font-weight: 100;
   }
 }
+@media screen and (max-width:570px) {
+  header {
+    height: 400px;
+    display: block;
+    padding-top:75px;
+  }
+}

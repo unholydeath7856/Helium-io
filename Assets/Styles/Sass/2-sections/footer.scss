@@ -1,0 +1,31 @@
+footer {
+  font-family:$font-family;
+  background-image: url('../../../Assets/Images/HeroBG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100px;
+  .navbar {
+    width: 100%;
+    display: inline-block;
+
+    .nav-logo {
+      padding-top: 10px;
+      padding-left: 10px;
+      float:left;
+    }
+
+    .navlink {
+      padding-top:25px;
+      padding-left: 10px;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $light-text;
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+}

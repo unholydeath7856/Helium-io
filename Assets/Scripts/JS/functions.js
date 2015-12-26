@@ -1,4 +1,3 @@
-var toggled = false;
 var prevSelect = 0;
 $(".nav-button").click(function () {
   $(".nav-button").slideUp(300, function () {
@@ -32,4 +31,26 @@ $(".select-container").click(function (event) {
     prevSelect = listItemClicked;
     $(".current").text(itemValue);
   }
+});
+
+$(".close").click(function () {
+  $(".navbar-container").slideUp(200);
+})
+
+function smoothScool (duration) {
+    $('a[href^="#"]').on('click', function(event) {
+
+        var target = $( $(this).attr('href') );
+
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, duration);
+        }
+    });
+}
+
+$(document).ready(function () {
+  smoothScool(1000);
 });

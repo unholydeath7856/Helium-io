@@ -25,6 +25,22 @@
       label {
         font-size:18px;
       }
+      .submit {
+        font-family: $font-family;
+        color:$light-text;
+        font-size: 24px;
+        -webkit-border-radius: 0;
+        -webkit-appearance: none;
+        border-radius: 0;
+        border: 3px solid $light-text;
+        background-color: white;
+        padding-top:5px;
+        padding-bottom: 5px;
+        padding-left:15px;
+        padding-right: 15px;
+        margin-top: 15px;
+        cursor:pointer;
+      }
     }
   }
 }
